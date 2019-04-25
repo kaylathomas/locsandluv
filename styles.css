@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.myscrollcontainer {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-menu {
+    width: 90%;
+    height: auto;
+    font-weight: 200;
+    font-size: 90%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+.menutext {
+    font-weight: 150;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbarbg {
+    background-color: #000000;
+}
+
+.vertical-menu a {
+    background-color: rgb(0, 0, 0); /* Grey background color */
+    color: rgb(255, 255, 255); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: rgb(207, 207, 207); /* Dark grey background on mouse-over */
+    color: #000000;
+    font-weight: 500;
+}
+
+.vertical-menu a.active {
+    background-color: rgb(207, 207, 207); /* Add a green color to the "active/current" link */
+    color: #000000;
+}
+
+.fixedcolumn {
+    position: fixed;
+    right: 0;    
+}
+.blackblocktop {
+    background-color: #000000;
+    width: 95%;
+    height: auto;
+    padding-top: 20%;
+    margin-top: 100px;
+    margin-bottom: 5%;
+    border-top-right-radius: 16px;
+}
+
+.blackblockbottom {
+    background-color: #000000;
+    width: 95%;
+    height: auto;
+    padding-top: 20%;
+    margin-right: 5%;
+    margin-top: 5%;
+    border-bottom-right-radius: 16px;
+}
+
+#floatingimage {
+    max-width: 80%;
+    height: auto;
+    padding-top: 15%;
+    margin: auto;
+}
+
+.mobfloatingimage {
+    width: 40%;
+    height: auto;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.aboutustext {
+    padding-top: 30%;
+    text-align: center;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.aboutustext2 {
+    width: 90%;
+    padding-top: 30%;
+    text-align: center;
+    margin-right: 10%;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.locslogo {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.homepageimage {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.indexpicture {
+    padding: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.stylistimage {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-left: 20%;
+}
+
+
+.fullscreenstylists {
+    margin-top: 90%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+}
+
+.stylistsheader {
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 150;
+    background-color: #383838;
+    color: #ffffff;
+    padding: 2%;
+    width: 70%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.stylisttext {
+    text-align: center;
+    font-size: 180%;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 115;
+}
+
+/*RESQUEST A STYLIST BUTTON*/
+
+.requestbutton {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    background: #fc6060;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    width: 40%;
+    font-weight: 150;
+    text-transform: uppercase;
+  }
+  
+  .requestbutton:hover {
+    background: #ff4750;
+    text-decoration: none;
+    font-weight: 200;
+  }
+
+/* PRICELIST TABLES*/
+
+.tableheading {
+    margin-top: 5%;
+    margin-left: 7.5%;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+.pricelistimages {
+    width: 50%;
+    height: auto;
+    padding: 1%;
+}
+
+.leftsidetable {
+    width: 20%;
+}
+
+.rightsidetable {
+    width: 80%;
+}
+
+table {
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 1%;
+    border-bottom: 1px solid #ddd;
+    height: 2%;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #ec6969;
+    color: white;
+}
+
+th {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-transform: uppercase;
+    font-size: 130%; 
+    font-weight: 100;
+}
+
+table, th, td {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+tr:nth-child(odd) {background-color: #bdbdbd;}
+
+th:first-child { -webkit-border-radius:15px 0 0 0; border-left:none}
+th:last-child{ -webkit-border-radius:0 15px 0 0;border-right:none }
+tfoot td:first-child{  -webkit-border-radius:0 0 0 15px ;}
+tfoot td:last-child{  -webkit-border-radius:0 0 15px 0;}
+
+    /* BACK BUTTON */
+
+    .pricelistbackbutton {
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 18px;
+        background: #fc6060;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 45%;
+        width: 35%;
+      }
+      
+    .pricelistbackbutton:hover {
+        background: #ff4750;
+        text-decoration: none;
+      }
+
+/* LOCATION PAGE */
+
+.locationimage {
+    margin-top: 20%;
+    height: auto;
+    width: 90%;
+}
+
+.locationimagemob {
+    margin: 5%;
+    height: auto;
+    width: 90%;
+}
+
+.locationheading {
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-size: 150%; 
+    font-weight: 220;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.locationtext {
+    font-size: 120%; 
+    font-weight: 100; 
+    text-align: center;
+}
+
+.locationtextmob {
+    font-size: 120%; 
+    font-weight: 100; 
+    text-align: center;
+    margin: 5%;
+}
+
+.map-responsive {
+    margin-top: 20%;
+}
+
+.map-responsivemob {
+    padding: 3%;
+}
+/* CONTACT FORM */
+
+.makeitfloatleft {
+    float: left;
+    width: 50%;
+}
+
+.clearboth {
+    clear: both;
+}
+
+input[type=text], select, textarea {
+    width: 95%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical 
+}
+
+/* SUBMIT BUTTON */
+input[type=submit] {
+    background-color: #f36565;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* SUBMIT BUTTON HOVER */
+input[type=submit]:hover {
+    background-color: #f05252;
+}
+
+.formcontainer {
+    padding-top: -15%;
+    margin-top: 4%;
+    margin-left: 18%;
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    width: 60%;
+}
+
+.formcontainermob {
+    padding-top: -15%;
+    margin: 5%;
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    width: 90%;
+}
+
+.underlinelabel {
+    font-weight: 100;
+    text-decoration: underline;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+.requiredast {
+    color: #f05252;
+    font-size: 100%;
+    float: right;
+}
+
+/* REST OF CONTACT PAGE*/
+
+.ownerimage {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.ownerheadermob {
+    font-weight: 175;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.overflow {
+    height: 50%;
+    width: auto;
+    overflow: scroll;
+}
+
+.ownertextmob {
+    text-align: center;
+    color: rgb(34, 34, 34);
+    font-weight: 100;
+    font-size: 150%;
+}
+
+.ownermobcontainer {
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.ownerheader {
+    font-weight: 150;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: rgb(231, 231, 231);
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.ownertext {
+    text-align: center;
+    color: rgb(231, 231, 231);
+    font-weight: 100;
+    font-size: 150%;
+}
+
+.ownertextbackground {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    margin-top: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+}
+
+.ownertextbackgroundmob {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    border-radius: 2%;
+}
+
+/*MEDIA QUERY*/
+@media (max-width:600px) {
+    .leftsidemenu, .centerdiv {
+      width: 100%; /*The width is 100%, when the viewport is 800px or smaller*/

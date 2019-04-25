@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One|Satisfy|Shadows+Into+Light|Shadows+Into+Light+Two" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <script type="text/javascript" src="popper.js"></script>
+   <script type="text/javascript" src="bootstrap.min.js"></script>
+   <title>Locs And Luv</title>
+</head>
+<body>
+            <!-- SMALLER/MOBILE SCREENS -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark navbarbg d-lg-none sticky-top">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                            <img src="https://i.imgur.com/fC05MEe.png" width="30" height="30" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto menutext">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="meetthestylists.html">Meet the Stylists</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="pricelist.html">Pricelist</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="location.html">Location</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="makeanappointment.html">Make An Appointment<span class="sr-only">(current)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                <div class="row">
+                    <div class="d-lg-none col-md-6">
+                        <img class="locationimagemob" src="https://i.imgur.com/2SmhyL8.png"/>
+                        <h3 class="locationheading">Location:</h3>
+                        <p class="locationtextmob">2380 Benjamin E Mays Dr SW, 
+                            <br>Atlanta, GA 30311</p>
+                    </div>
+                    <div id="map-container" class="z-depth-1-half col-md-6 d-lg-none" style="height: 350px">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4763066400774!2d-84.46765544897036!3d33.72249758060227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f51ce3f16e757f%3A0x968bf3e3eb63ba10!2s2380+Benjamin+E+Mays+Dr+SW%2C+Atlanta%2C+GA+30311!5e0!3m2!1sen!2sus!4v1520054400615" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+        <!-- NORMAL SCREENS -->
+
+        <div class="container"></div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                <div class="blackblocktop"></div>
+                <img class="locslogo" src="https://i.imgur.com/fC05MEe.png"/>
+                    <br>
+                <div class="vertical-menu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="meetthestylists.html">Meet the Stylists</a>
+                    <a href="pricelist.html">Pricelist</a>
+                    <a href="location.html">Location</a>
+                    <a href="makeanappointment.html">Make An Appointment</a>
+                </div>
+                <div class="blackblockbottom"></div>
+            </div>
+            <div class="col-sm-5 d-none d-lg-block">
+                <img class="locationimage" src="https://i.imgur.com/2SmhyL8.png"/>
+                <h3 class="locationheading">Location:</h3>
+                <p class="locationtext">2380 Benjamin E Mays Dr SW, 
+                    <br>Atlanta, GA 30311</p>
+            </div>
+            <div class="col-sm-5 d-none d-lg-block">
+                    <div id="map-container" class="z-depth-1-half map-responsive d-none d-lg-block" style="height: 500px">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4763066400774!2d-84.46765544897036!3d33.72249758060227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f51ce3f16e757f%3A0x968bf3e3eb63ba10!2s2380+Benjamin+E+Mays+Dr+SW%2C+Atlanta%2C+GA+30311!5e0!3m2!1sen!2sus!4v1520054400615" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
