@@ -7,33 +7,29 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One|Satisfy|Shadows+Into+Light|Shadows+Into+Light+Two" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="css/styles.css">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
-   <script type="text/javascript" src="popper.js"></script>
-   <script type="text/javascript" src="bootstrap.min.js"></script>
    <title>Locs And Luv</title>
 </head>
 <body>
             <!-- SMALLER/MOBILE SCREENS -->
 
             <nav class="navbar navbar-expand-lg navbar-dark navbarbg d-lg-none sticky-top">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">
                             <img src="https://i.imgur.com/fC05MEe.png" width="30" height="30" alt="">
                     </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
                       <ul class="navbar-nav mr-auto menutext">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="aboutus.html">About Us</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                                 <a class="nav-link" href="meetthestylists.html">Meet the Stylists</a>
                         </li>
                         <li class="nav-item">
@@ -48,13 +44,6 @@
                       </ul>
                     </div>
                   </nav>
-
-                  <div class="d-lg-none ">
-                                <a href="chidi.html" target="_blank"><img class="stylistimage float-left" src="https://i.imgur.com/rqtV1ge.png"/></a>
-                        <h1 class="text-center ownerheadermob"> Meet Chidi: </h1>
-                                <p class="ownertextmob">Chidi is our resident loc artist. Her work runs the gambit from neat faux locs to stylishly messy Marley-dreads. She may work with locs, but her work is anything but dreadful!</p>       
-                        <a href="makeanappointment.html"><p class="requestbutton">Request Chidi</p></a>         
-                    </div> <!-- COLUMN DIV END -->
     
         <!-- NORMAL SCREENS -->
 
@@ -62,7 +51,7 @@
         <div class="row">
             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                 <div class="blackblocktop"></div>
-                <img class="locslogo" src="https://i.imgur.com/fC05MEe.png"/>
+                <img class="locslogo" src="https://i.imgur.com/fC05MEe.png">
                     <br>
                 <div class="vertical-menu">
                     <a href="index.html" class="active">Home</a>
@@ -73,19 +62,27 @@
                     <a href="makeanappointment.html">Make An Appointment</a>
                 </div>
                 <div class="blackblockbottom"></div>
-        </div> <!-- COLUMN DIV END -->
-        <div class="col-xl-5 col-lg-5 d-none d-lg-block ">
-                        <a href="emily.html" target="_blank"><img class="indexpicture float-left" src="https://i.imgur.com/rqtV1ge.png"/></a>
-        </div>
-        <div class="col-xl-4 col-lg-4 d-none d-lg-block ">
-                        <div class="ownertextbackground ">
-                <h1 class="text-center ownerheader"> Meet Chidi: </h1>
-                        <p class="ownertext">Chidi is our resident loc artist. Her work runs the gambit from neat faux locs to stylishly messy Marley-dreads. She may work with locs, but her work is anything but dreadful!</p>     
-                        </div>     
-                <a href="makeanappointment.html"><p class="requestbutton">Request Chidi</p></a>         
-            </div> <!-- COLUMN DIV END -->
-            <div class="col-xl-1 col-lg-1 "></div>
-        </div> <!-- ROW DIV -->
-    </div> <!-- CONTAINER DIV -->
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-1"></div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-xs-12 fadeInUp">
+                    <img class="homepageimage" src="https://i.imgur.com/PNAWWc2.png">
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-1"></div>
+            <div class="d-lg-none col-md-1"></div>
+            <div class="d-lg-none col-md-10 col-sm-12 col-xs-12 vertical-menu">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="meetthestylists.html">Meet the Stylists</a>
+                        <a href="pricelist.html">Pricelist</a>
+                        <a href="location.html">Location</a>
+                        <a href="makeanappointment.html">Make An Appointment</a>
+            </div>
+            <div class="d-lg-none col-md-1"></div>
+        </div> <!-- ROW DIV END -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>   
+
 </body>
 </html>

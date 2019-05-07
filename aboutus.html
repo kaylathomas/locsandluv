@@ -7,12 +7,8 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One|Satisfy|Shadows+Into+Light|Shadows+Into+Light+Two" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="css/styles.css">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
-   <script type="text/javascript" src="popper.js"></script>
-   <script type="text/javascript" src="bootstrap.min.js"></script>
    <title>Locs And Luv</title>
 </head>
 <body>
@@ -30,7 +26,7 @@
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                           <a class="nav-link" href="aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
@@ -39,7 +35,7 @@
                         <li class="nav-item">
                                 <a class="nav-link" href="pricelist.html">Pricelist</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                                 <a class="nav-link" href="location.html">Location</a>
                         </li>
                         <li class="nav-item">
@@ -48,21 +44,15 @@
                       </ul>
                     </div>
                   </nav>
-
-                <div class="row">
-                    <div class="d-lg-none col-md-6">
-                        <img class="locationimagemob" src="https://i.imgur.com/2SmhyL8.png"/>
-                        <h3 class="locationheading">Location:</h3>
-                        <p class="locationtextmob">2380 Benjamin E Mays Dr SW, 
-                            <br>Atlanta, GA 30311</p>
-                    </div>
-                    <div id="map-container" class="z-depth-1-half col-md-6 d-lg-none" style="height: 350px">
-                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4763066400774!2d-84.46765544897036!3d33.72249758060227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f51ce3f16e757f%3A0x968bf3e3eb63ba10!2s2380+Benjamin+E+Mays+Dr+SW%2C+Atlanta%2C+GA+30311!5e0!3m2!1sen!2sus!4v1520054400615" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+    
+                  <div class="d-lg-none ownermobcontainer">
+                        <img class="floating float-right d-lg-none mobfloatingimage" id="floatingimage" src="https://i.imgur.com/phGQ1h6.png"/>
+                        <h4 class="ownerheadermob">Our Humble Beginnings</h4>
+                        <div class="font-weight-light"><p class="ownertextmob">Born and raised in Central Atlanta, Nicole and a small group of her close friends grew weary of the long lines and informality of most chain hair salons, and the lack of variety of styles for women with natural hair. Having all graduated in the top ten percent of their respective cosmetology schools, the five women decided to band together to start a salon that was upscale, but had the familiarity and pricing of a smaller shop. </p></div>
                 </div>
         <!-- NORMAL SCREENS -->
 
-        <div class="container"></div>
+    <div class="container"></div>
         <div class="row">
             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                 <div class="blackblocktop"></div>
@@ -78,19 +68,21 @@
                 </div>
                 <div class="blackblockbottom"></div>
             </div>
-            <div class="col-sm-5 d-none d-lg-block">
-                <img class="locationimage" src="https://i.imgur.com/2SmhyL8.png"/>
-                <h3 class="locationheading">Location:</h3>
-                <p class="locationtext">2380 Benjamin E Mays Dr SW, 
-                    <br>Atlanta, GA 30311</p>
-            </div>
-            <div class="col-sm-5 d-none d-lg-block">
-                    <div id="map-container" class="z-depth-1-half map-responsive d-none d-lg-block" style="height: 500px">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4763066400774!2d-84.46765544897036!3d33.72249758060227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f51ce3f16e757f%3A0x968bf3e3eb63ba10!2s2380+Benjamin+E+Mays+Dr+SW%2C+Atlanta%2C+GA+30311!5e0!3m2!1sen!2sus!4v1520054400615" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="col-sm-5">
+                <div class="ownertextbackground d-none d-lg-block">
+                    <h4 class="ownerheader">Our Humble Beginnings</h4>
+                    <div class="font-weight-light"><p class="ownertext">Born and raised in Central Atlanta, Nicole and a small group of her close friends grew weary of the long lines and informality of most chain hair salons, and the lack of variety of styles for women with natural hair. Having all graduated in the top ten percent of their respective cosmetology schools, the five women decided to band together to start a salon that was upscale, but had the familiarity and pricing of a smaller shop. </p></div>
                 </div>
-
+            </div>
+            <div class="col-sm-5">
+                    <img class="floating d-none d-lg-block" id="floatingimage" src="https://i.imgur.com/phGQ1h6.png"/>
+            </div>
             </div>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
