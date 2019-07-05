@@ -143,11 +143,60 @@ a:hover {
     height: auto;
 }
 
+/*SHOPPING CART*/
+.shoppingCart {
+    font-size: 120%;
+    color: #3e3e3e;
+}
+
+.shoppingCart:hover {
+    color: #000000;
+}
+
+/*SHOPPING CART BADGE*/
+.shoppingCart .p1[data-count]:after{
+    position:absolute;
+    right:10%;
+    top:8%;
+    content: attr(data-count);
+    font-size:40%;
+    padding:.25em;
+    border-radius: 25%;
+    line-height:1em;
+    color: white;
+    background:#ff4750;
+    text-align:center;
+    min-width: 1em;
+    //font-weight:bold;
+  }
+
 .stylistimage {
-    width: 60%;
-    height: auto;
-    margin: auto;
-    margin-left: 20%;
+/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .4s ease-in-out; 
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid red;
+    position: relative;
+    top: -50px; 
+}
+
+.stylistimage:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid red;
+}
+
+.stylistimage:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 
